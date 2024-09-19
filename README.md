@@ -51,3 +51,37 @@ Ties a explicit sequence of commands, for example: { "M", "M", "R", "M", "M" }.
 Map the command strings to their actual associated Command objects using a Map.
 Use the CommandInvoker to execute the sequence of commands
 Print out the final position and status report in the required format.
+
+EDUCATIONAL_INITIATIVE/
+├── src/
+│   └── EDUCATIONAL_INITIATIVE/
+│       ├── Command.java
+│       ├── CommandInvoker.java
+│       ├── LeftCommand.java
+│       ├── MarsRoverSimulation2.java
+│       ├── MoveCommand.java
+│       ├── Position.java
+│       ├── Grid.java
+│       ├── GridComponent.java
+│       ├── Rover.java
+│       ├── RightCommand.java
+│       └── Direction.java
+
+## Key Features of the Implementation
+--> Randomized initial position and direction:
+* The Rover may be initialized with an arbitrary initial position and direction within the grid.
+
+--> Command Handling at runtime:
+* The Command Pattern is used to handle commands abstrc-tly. Every action-Move, Left, Right-is encapsulated as a distinct object.
+* A Map is used to associate strings representing commands with their corresponding Command objects; no if statements.
+
+--> Obstacle Detection and Boundary Enforcement:
+* The Rover acts on a Grid, with obstacles. Movement is forbidden if an obstacle is encountered or by trying to move out of the grid.
+
+-->Status Reporting:
+* After executing the command sequence, the Rover gives a final position and status report providing its state at that point and whether it encountered any obstacles en route.
+
+-->Design Patterns and OOP Principles:
+* Command Pattern: Actions are encapsulated as Command objects like MoveCommand, LeftCommand, and RightCommand.
+* Composite Pattern: A variation of implementation of the grid classes Grid and Obstacle.
+* Encapsulation, Inheritance, Polymorphism: A clean and maintainable codebase.
