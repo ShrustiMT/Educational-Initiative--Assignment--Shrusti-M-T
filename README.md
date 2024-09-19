@@ -1,4 +1,5 @@
-![{DB9EAB0A-3529-498A-AF61-6C1F447FC0A2}](https://github.com/user-attachments/assets/1fbdad7a-7867-4b27-9c2f-fe57c8c907f7)## Folder Structure
+![{DB9EAB0A-3529-498A-AF61-6C1F447FC0A2}](https://github.com/user-attachments/assets/1fbdad7a-7867-4b27-9c2f-fe57c8c907f7)
+## Folder Structure
 
 The workspace contains two folders by default, where:
 
@@ -51,22 +52,8 @@ Ties a explicit sequence of commands, for example: { "M", "M", "R", "M", "M" }.
 Map the command strings to their actual associated Command objects using a Map.
 Use the CommandInvoker to execute the sequence of commands
 Print out the final position and status report in the required format.
-"""
-EDUCATIONAL_INITIATIVE/
-├── src/
-│   └── EDUCATIONAL_INITIATIVE/
-│       ├── Command.java
-│       ├── CommandInvoker.java
-│       ├── LeftCommand.java
-│       ├── MarsRoverSimulation2.java
-│       ├── MoveCommand.java
-│       ├── Position.java
-│       ├── Grid.java
-│       ├── GridComponent.java
-│       ├── Rover.java
-│       ├── RightCommand.java
-│       └── Direction.java
-"""
+
+
 ## Key Features of the Implementation
 --> Randomized initial position and direction:
 * The Rover may be initialized with an arbitrary initial position and direction within the grid.
